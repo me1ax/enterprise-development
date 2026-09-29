@@ -8,8 +8,7 @@ namespace DryCleaning.Domain;
 public class ItemCategory
 {
     ///<summary>
-    /// Клиент химчистки
-    ///</summary>
+    /// Идентификатор категории
     public int Id { get; set; }
 
     ///<summary>

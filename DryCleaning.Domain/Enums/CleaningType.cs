@@ -1,7 +1,7 @@
 namespace DryCleaning.Domain.Enums;
 
 ///<summary>
-/// Клиент химчистки
+/// Вид чистки изделия
 ///</summary>
 public enum CleaningType
 {

@@ -1,7 +1,7 @@
 namespace  DryCleaning.Domain.Enums;
 
 ///<summary>
-/// Клиент химчистки
+/// Статус заказа в химчистке
 ///</summary>
 public enum OrderStatus
 {

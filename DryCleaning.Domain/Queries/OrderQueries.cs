@@ -9,7 +9,7 @@ namespace DryCleaning.Domain.Queries;
 public static class OrderQueries
 {
     ///<summary>
-    ///Заказы, находящиеся в оброботку, упорядоченные по дате приема
+    ///Заказы, находящиеся в обработке, упорядоченные по дате приема
     ///</summary>
     public static List<Order> GetInProgressOrders(IEnumerable<Order> orders) =>
         orders

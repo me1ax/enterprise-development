@@ -7,9 +7,9 @@ namespace DryCleaning.Domain;
 ///</summary>
 public class Order
 {
-    //<summary>
-    // Идентификатор заказа
-    //</summary>
+    ///<summary>
+    /// Идентификатор заказа
+    ///</summary>
     public int Id { get; set; }
 
     ///<summary>
