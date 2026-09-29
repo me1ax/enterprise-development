@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Разработка корпоративных приложений
 [Таблица с успеваемостью](https://docs.google.com/spreadsheets/d/1nHewCKHKgS9BqbfIv1GTuropMRdFEIDgqLwYDaufA-U/edit?pli=1&gid=0#gid=0)
 
@@ -134,3 +135,40 @@
 
 Чтобы задать вопрос по лабораторной, воспользуйтесь [соотвествующим разделом дискуссий](https://github.com/itsecd/enterprise-development/discussions/categories/questions) или заведите [ишью](https://github.com/itsecd/enterprise-development/issues/new).  
 Если у вас появились идеи/пожелания/прочие полезные мысли по преподаваемой дисциплине, их можно оставить [здесь](https://github.com/itsecd/enterprise-development/discussions/categories/ideas).
+=======
+# DryCleaning - Лабораторная работа № 1
+
+| Параметр | Значение |
+|---|---|
+| Автор |<Мельник А.В.>|
+| Группа | 6412 |
+| Вариант | 50 |
+| Предметная область | Химчистка |
+
+## Модель
+
+| Тип | Значение |
+|---|---|
+| `Client` | Клиент: ФИО, телефон |
+| `Item` | Изделие: название, материал, категория |
+| `ItemCategory` | Категория: название, рекомендуемый вид чистки, цена |
+| `Order` | Заказ: клиент, изделие, дата приёма, срок в днях, статус |
+| `OrderStatus` | Enum: Accepted, InProgressm Completed, Issued, Cancelled |
+| `CleaningType` | Enum: DryCleaning, WetCleaning, SteamCleaning, HandWash, Ironing |
+
+
+## Аналитические запросы
+
+Пять запросов реализованы в `OrderQueries`:
+
+- Заказы в обработке, отсортированные по дате приёма
+- Топ-5 клиентов по количеству изделий за период
+- Клиенты с самой долгой обработкой (по ФИО)
+- Топ-5 популярных и непопулярных категорий за год
+- Клиент с наибольшей суммой по выданным заказам
+
+## Запуск
+
+```sh
+dotnet test DryCleaning.slnx --configuration Release
+>>>>>>> 263acd0 (lab1)
