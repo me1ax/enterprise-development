@@ -2,27 +2,28 @@ using DryCleaning.Domain.Enums;
 
 namespace DryCleaning.Domain;
 
-///<summary>
+/// <summary>
 /// Категория изделия
-///</summary>
+/// </summary>
 public class ItemCategory
 {
-    ///<summary>
+    /// <summary>
     /// Идентификатор категории
+    /// <summary>
     public int Id { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Название категории
-    ///</summary>
+    /// </summary>
     public required string Name { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Рекомендуемый вид чистки
-    ///</summary>
+    /// </summary>
     public CleaningType RecommendedCleaningType { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Стоимость чистки
-    ///</summary>
+    /// </summary>
     public decimal Price { get; set; }
 }

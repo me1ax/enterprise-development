@@ -1,22 +1,22 @@
 namespace DryCleaning.Domain;
 
-///<summary>
+/// <summary>
 /// Клиент химчистки
-///</summary>
+/// </summary>
 public class Client
 {
-    ///<summary>
-    /// Идентификатоор клиента
-    ///</summary>
+    /// <summary>
+    /// Идентификатор клиента
+    /// </summary>
     public int Id { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// ФИО клиента
-    ///</summary>
+    /// </summary>
     public required string FullName { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Номер телефона
-    ///</summary>
+    /// </summary>
     public required string PhoneNumber { get; set; }
 }

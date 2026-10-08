@@ -1,16 +1,16 @@
-using DryCleaning.Domain.Queries;
+using DryCleaning.Tests.Services;
 using DryCleaning.Domain.Seeds;
 
 namespace DryCleaning.Tests;
 
-///<summary>
-///Тесты запросов по клиентам
-///</summary>
+/// <summary>
+/// Тесты запросов по клиентам
+/// </summary>
 public class ClientQueriesTests(TestData data) : IClassFixture<TestData>
 {
-    ///<summary>
-    ///Топ-5 клиентов по количеству сданных изделий за 2026 год
-    ///</summary>
+    /// <summary>
+    /// Топ-5 клиентов по количеству сданных изделий за 2026 год
+    /// </summary>
     [Fact]
     public void Top5ClientsAreSortedByItemCount()
     {
@@ -24,7 +24,7 @@ public class ClientQueriesTests(TestData data) : IClassFixture<TestData>
         Assert.Equal(expectedIds, clients.Select(c => c.Id));
     }
 
-    ///<summary>
+    /// <summary>
     /// Клиенты с самой долгой обработкой, упорядоченные по ФИО
     /// </summary>
     [Fact]
@@ -37,13 +37,13 @@ public class ClientQueriesTests(TestData data) : IClassFixture<TestData>
         Assert.Equal(expectedIds, clients.Select(c => c.Id));
     }
 
-    ///<summary>
+    /// <summary>
     /// Клиент с наибольшей суммой за весь период
-    ///</summary>
+    /// </summary>
     [Fact]
     public void TopSpendingClientIsCalculatedFromIssuedOrders()
     {
-        var expectedId = 1;
+        const int expectedId = 1;
         
         var client = OrderQueries.GetTopSpendingClient(data.Orders);
 

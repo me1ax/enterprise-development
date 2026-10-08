@@ -1,32 +1,32 @@
-namespace  DryCleaning.Domain.Enums;
+namespace DryCleaning.Domain.Enums;
 
-///<summary>
+/// <summary>
 /// Статус заказа в химчистке
-///</summary>
+/// </summary>
 public enum OrderStatus
 {
-    ///<summary>
+    /// <summary>
     /// Принят
-    ///</summary>
-    Accepted,
+    /// </summary>
+    Accepted = 0,
 
-    ///<summary>
+    /// <summary>
     /// В обработке
-    ///</summary>
-    InProgress,
+    /// </summary>
+    InProgress = 1,
 
-    ///<summary>
+    /// <summary>
     /// Выполнен
-    ///</summary>
-    Completed,
+    /// </summary>
+    Completed = 2,
 
-    ///<summary>
+    /// <summary>
     /// Выдан
-    ///</summary>
-    Issued,
+    /// </summary>
+    Issued = 3,
 
-    ///<summary>
-    ///Отменен
-    ///</summary>
-    Cancelled
+    /// <summary>
+    /// Отменен
+    /// </summary>
+    Cancelled = 4
 }

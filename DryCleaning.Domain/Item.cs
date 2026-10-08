@@ -1,27 +1,27 @@
 namespace DryCleaning.Domain;
     
-///<summary>
+/// <summary>
 /// Изделие, принятое в химчистку
-///</summary>
+/// </summary>
 public class Item 
 {
-    ///<summary>
+    /// <summary>
     /// Идентификатор изделия
-    ///</summary>
+    /// </summary>
     public int Id { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Наименование изделия
-    ///</summary>
+    /// </summary>
     public required string Name { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Материал изделия
-    ///</summary>
+    /// </summary>
     public required string Material { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Категория изделия
-    ///</summary>
+    /// </summary>
     public required ItemCategory Category { get; set; }
 }

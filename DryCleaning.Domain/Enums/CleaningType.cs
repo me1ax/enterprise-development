@@ -1,32 +1,32 @@
 namespace DryCleaning.Domain.Enums;
 
-///<summary>
+/// <summary>
 /// Вид чистки изделия
-///</summary>
+/// </summary>
 public enum CleaningType
 {
-    ///<summary>
+    /// <summary>
     /// Химчистка
-    ///</summary>
-    DryCleaning,
+    /// </summary>
+    DryCleaning = 0,
 
-    ///<summary>
+    /// <summary>
     /// Аквачистка
-    ///</summary>
-    WetCleaning,
+    /// </summary>
+    WetCleaning = 1,
 
-    ///<summary>
+    /// <summary>
     /// Паровая обработка
-    ///</summary>
-    SteamCleaning,
+    /// </summary>
+    SteamCleaning = 2,
 
-    ///<summary>
+    /// <summary>
     /// Ручная стирка
-    ///</summary>
-    HandWash,
+    /// </summary>
+    HandWash = 3,
 
-    ///<summary>
+    /// <summary>
     /// Глажение
-    ///</summary>
-    Ironing
+    /// </summary>
+    Ironing = 4
 }

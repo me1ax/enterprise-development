@@ -1,16 +1,16 @@
-using DryCleaning.Domain.Queries;
 using DryCleaning.Domain.Seeds;
+using DryCleaning.Tests.Services;
 
 namespace DryCleaning.Tests;
 
-///<summary>
-///Тесты запросов по заказам
-///</summary>
+/// <summary>
+/// Тесты запросов по заказам
+/// </summary>
 public class OrderQueriesTests(TestData data) : IClassFixture<TestData>
 {
-    ///<summary>
-    ///Заказы в обработке, упорядоченные по дате приема
-    ///</summary>
+    /// <summary>
+    /// Заказы в обработке, упорядоченные по дате приема
+    /// </summary>
     [Fact]
     public void InProgressOrderAreSortedByAcceptDate()
     {

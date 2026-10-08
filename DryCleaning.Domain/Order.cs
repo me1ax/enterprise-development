@@ -2,38 +2,38 @@ using DryCleaning.Domain.Enums;
 
 namespace DryCleaning.Domain;
 
-///<summary>
+/// <summary>
 /// Заказ на обработку изделия
-///</summary>
+/// </summary>
 public class Order
 {
-    ///<summary>
+    /// <summary>
     /// Идентификатор заказа
-    ///</summary>
+    /// </summary>
     public int Id { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Клиент
-    ///</summary>
+    /// </summary>
     public required Client Client { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Изделие
-    ///</summary>
+    /// </summary>
     public required Item Item { get; set; }
 
-    ///<summary>
-    ///Дата приема заказа
-    ///</summary>
+    /// <summary>
+    /// Дата приема заказа
+    /// </summary>
     public DateTime AcceptDate { get; set; }  
 
-    ///<summary>
-    // Срок выполнения заказа
-    //</summary>
+    /// <summary>
+    /// Срок выполнения заказа
+    /// </summary>
     public int DueDays { get; set; }
 
-    ///<summary>
+    /// <summary>
     /// Статус заказа
-    ///</summary>
+    /// </summary>
     public OrderStatus Status { get; set; }
 }
